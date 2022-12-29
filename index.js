@@ -20,7 +20,7 @@ io.on("connection", (socket) => {
   const ptyProcess = pty.spawn(shell, [], {
     name: "xterm-color",
     cols: 120,
-    rows: 75,
+    rows: 180,
     cwd: process.env.HOME,
     env: process.env,
   });
